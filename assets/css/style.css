@@ -1,109 +1,122 @@
-/* Configuración para la página completa */
 body {
   font-family: "Raleway", sans-serif;
   background-color: black;
-  color: #ffffff;
+  
 }
 
 main {
-  width: 1280px;
-  height: auto;
+  height:auto;
+  
 }
 
-/* Título de la página */
 header {
+  background-color: black;
   height: 73px;
   text-align: center;
-  opacity: 1;
+  overflow: hidden;
 }
 
 header h1 {
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 53px;
+  color: white;
+  font-weight: 100;
   margin-top: 11.5px;
 }
 
-/* Foto de iguana en grande */
 #slider {
-  height: 727px;
   background-image: url(../img/bg-header.jpg);
-  background-repeat: no-repeat;
+  height: 727px;
   background-size: cover;
-  background-position: center center;
-  opacity: 1;
 }
 
-/* descripcion iguanas */
-#descripcion_iguanas {   
-    height: 237px;
-    width: 76.5%;
-    margin: 45px auto;
-    padding-bottom: 21px;
-    display: flow-root;
-  }
+.description {
+  background-color: black;
+  padding: 45px 150px;
+  align-items: center;
+}
 
-#descripcion_iguanas_texto {
-  font-size: 16px;
-  width: 48%;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.description p {
   float: left;
-  padding: 31px 0;
-  font-weight: 300;
+  color: white;
+  width: 50%;
+  border: 2px green dotted;
+  margin-top: 31px;
 }
 
-#descripcion_iguanas_imagen {
+.description_imagen {
   float: right;
-  padding-left: 106px;
+  width: 399px;
+  height: 237px;
 }
 
-/* Caracteristicas */
-.features {
+.caracteristicas {
   background-color: #1e1a13;
+  color: white;
   text-align: center;
-  height: 348px;
+  padding-top: 75px;
+  padding-bottom: 74px;
 }
 
-.feature {
-  width: 33%;
-  display: inline-block;
-  font-size: 25px;
-}
-
-.features h2 {
-  padding-top: 68px;
-  padding-bottom: 48px;
-  margin: 0px;
+.caracteristicas h2 {
   font-size: 40px;
+}
+
+.caracteristicas__iconos {
+  margin: 50px 300px 0px 300px;
+}
+
+.caracteristicas__iconos div {
+  display: inline-block;
+  width: 30%;
+}
+
+.caracteristicas__iconos div:hover {
+  color: green;
+}
+
+.icono {
+  font-size: 37px;
+  margin-bottom: 16.5px;
+}
+
+.imagenesx3 {
+  background-color: black;
+  padding: 73px 150px;
   text-align: center;
 }
 
-.feature i {
-  display: block;
-  padding: 0.5em;
-}
-
-/* Galeria de iguanas */
-#galeria {
+.imagenesx3 img {
+  width: 316px;
   height: 202px;
-  padding: 73px 141px 73px 133px;
 }
 
-.foto {
-  display: inline-block;
+.description_imagen:hover,
+.imagenesx3 img:hover {
+  transform: scale(1.25);
 }
 
-.foto img {
-  padding-left: 16px;
+.imagenesx3 img:nth-child(2) {
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
-/* Fin de la página */
 footer {
   background-color: #1e1a13;
-  opacity: 0.94;
-  height: 102px;
+  color: white;
+  padding: 39px 299px;
+  text-align: center;
 }
 
-footer p {
-  padding-top: 39px;
-  text-align: center;
-  font-size: 1.25em;
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: green;
 }
